@@ -1,0 +1,151 @@
+*{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#menu-container{
+    background-color: antiquewhite;
+    padding: 0.5rem 0;
+    font-weight: 300;
+}
+
+.menu-heading, .menu-list-heading{
+    color: rgba(218, 64, 164, 0.821);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px
+}
+
+.btn-div > button{
+    margin-left: 10px;
+}
+
+
+/* card-area start */
+
+.card-content{
+    display: flex;
+    background-color: #ffe6ff;
+    font-weight: 300;
+    word-spacing: 1px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.card-content-left{
+    width: 280px;
+}
+
+.card-content-left{
+    justify-content: flex-start;
+}
+
+.card-img{
+    margin: 10px 5px 10px 5px;
+    height: 160px;
+    width: 130px;
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    vertical-align: middle;
+    background-color: #ffb3ff;
+    color: #990099;
+    font-weight: 400;
+}
+
+.card-header-right > i{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.card-header-right > i:first-child{
+    color: #262626;
+}
+
+.card-header-right > i:nth-child(2){
+    color: #ff1a1a;
+    font-size: 23px;
+}
+
+.card-header-left{
+    /* text-transform: uppercase; */
+    font-size: 19px;
+    margin-top: 2px;
+}
+
+.card-header-right > i{
+    font-size: 18px;
+}
+
+.card-length{
+    height: auto;
+    width: 350px;
+    overflow-x: hidden;
+}
+
+.card-dish-name{
+    font-size: 19px;
+}
+
+.card-dish-type,.desc{
+    font-size: 15px;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.api-img{
+    height: 250px;
+    width: 250px;
+    margin: 10px 20px 0 100px;
+}
+
+.api-img > img{
+    height: 200px;
+    width: 250px;
+}
+
+@media screen and (min-width: 370px) {
+    .cards-container{
+        display: grid;
+        grid-template-columns: auto;
+        padding:0 ;
+        margin-left: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 870px) {
+    .cards-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding:0 ;
+        margin-left: 0;
+    }
+  } 
+
+  @media screen and (min-width: 970px) {
+    .cards-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding:0 ;
+    }
+  }   
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
